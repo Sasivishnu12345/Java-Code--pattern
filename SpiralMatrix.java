@@ -16,24 +16,20 @@ public class SpiralMatrix{
                 ls.add(arr[top][i]);
             }
             top++;
-             System.out.println(ls);
             for(int i=top;i<=bottom;i++){
                 ls.add(arr[i][right]);
             }
             right--;
-             System.out.println(ls);
             for(int i=right;i>=left;i--){
                 ls.add(arr[bottom][i]);
             }
             bottom--;
-             System.out.println(ls);
             for(int i=bottom;i>=top;i--){
                 ls.add(arr[i][left]);
             }
             left++;
-             System.out.println(ls);
         }
-       
+        System.out.println(ls);
     }
     
 }
